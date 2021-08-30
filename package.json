@@ -4,9 +4,8 @@
   "description": "Template para o projeto LAMA",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node --inspect ./build/index.js",
-    "dev-start": "ts-node-dev ./src/index.ts"
+    "test": "jest",
+    "start": "ts-node ./src/index.ts"
   },
   "keywords": [
     "api",
@@ -33,12 +32,5 @@
     "ts-node": "^8.10.2",
     "typescript": "^3.9.6",
     "uuid": "^8.2.0"
-  },
-  "devDependencies": {
-    "@types/bcryptjs": "2.4.2",
-    "@types/jest": "25.2.3",
-    "@types/jsonwebtoken": "8.5.0",
-    "@types/knex": "0.16.1",
-    "ts-node-dev": "1.0.0-pre.44"
   }
 }
